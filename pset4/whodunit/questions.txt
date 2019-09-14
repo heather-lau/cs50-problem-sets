@@ -1,0 +1,12 @@
+1.  stdint.h is a C standard library header file declares sets of integer type with specific bits size.
+2.  Makes it clear to count the size of various types of data.
+3.  BYTE:1byte, DWORD:4bytes, LONG:4bytes, WORD:2bytes
+4.  ASCII:BM, decimal:19778, hexadecimal:0x42 0x4D
+5.  bfSize is BMP file size includes size of image and header, biSize is BMP image size includes size of RGBTRIPLE and padding.
+6.  It means the image is top-down.
+7.  biBitCount specifies the BMP's color depth.
+8.  It might because the file doesn't exist or don't have permission or other error.
+9.  Because we only read one block at a time.
+10. If bi.biWidth is 3, padding = (4 - (3 * 3) % 4) % 4, the value of padding is 3.
+11. Change the location of the file pointer.
+12. The referent location for the fseek function, cur means current location of the file pointer.
